@@ -4,9 +4,9 @@ document.getElementById('nameForm').addEventListener('submit', function(e) {
     generateCard(name);
 });
 
-// Play background music
-var bgMusic = document.getElementById('bgMusic');
-bgMusic.play();
+document.getElementById('playButton').addEventListener('click', function() {
+  var bgMusic = document.getElementById('bgMusic');
+  bgMusic.play();
 
 
 function generateCard(name) {
